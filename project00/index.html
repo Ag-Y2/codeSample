@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver=1.6">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>index</title>
+
+</head>
+
+<body>
+	<div id="op1Search">
+		
+	<div id="title"><p>관광코스별 날씨 조회</p></div>
+	<div id="searchBox">
+		<button id="homeBtn" onClick="location.reload()" > <i class="fa fa-reply"></i> </button>
+    <input type="text" class="dataBtn" id="cid" onkeypress="if(event.keyCode == 13){searchEnter();}" placeholder="코스 번호 (1~438)" required>
+    <button id="hw" value="입력"> <i class="fa fa-search"></i> </button>
+   
+    </div>
+
+    </div>
+    <div id="op2Search">
+	<div id="title"><p>관광코스별 날씨 조회</p></div>
+	<div id="searchBox2">
+		<button id="homeBtn" onClick="location.reload()" > <i class="fa fa-reply"></i> </button>
+    <input type="text" class="dataBtn" id="cid2" placeholder="코스 번호 (1~438)" onkeypress="if(event.keyCode == 13){searchEnter2();}"  required>
+    <input type="text" class="dataBtn" id="date2" placeholder="날짜 (예시:20201128)" onkeypress="if(event.keyCode == 13){searchEnter2();}" required>
+     <select id="time2" name="time" class="dataBtn" onkeypress="if(event.keyCode == 13){searchEnter2();}" required>
+    <option value="10">09:00</option>
+    <option value="14">12:00</option>
+    <option value="16">15:00</option>
+    <option value="20">18:00</option>
+  </select>
+
+    <button id="hw2"  value="입력"> 
+    	<i class="fa fa-search"></i> 
+    </button>
+  <script type="text/javascript" src ="js/script00.js?ver=1.6"></script>
+    </div>
+    </div>
+	<div id="hisBtn">
+		<!--<button id="remBtn" >관광코스 id 목록</button>     <script type="text/javascript" src ="js/script01.js?ver=1.0"></script>-->
+	</div>
+
+	<div id="choice">
+		<button id="choBtn" onClick="choice1()">관광코스 날씨 간편 조회</button>
+		<p id="choiceOr">OR</p>
+		<button id="choBtn" onClick="choice2()">관광코스 날씨 세부 조회</button>
+		 <script type="text/javascript" src ="js/script03.js?ver=1.2"></script>
+	</div>
+
+  <div class="container">
+  	<div class="diagonal-box0">
+      	<div class="diagonal-box1">
+		<div class="diagonal-box2">
+			<div class="diagonal-box3">
+	<div class="content">	
+    </div></div></div></div></div>
+    <div id="dataWrap">
+    <div id="data"></div>
+    <div id="dataTable">
+    <table class="type11">
+    	<tr>
+    		<th>코스 ID</th>
+    		<th>코스 명</th>
+    		<th>테마</th>
+    		<th>관광코스 명</th>
+    		<th>코스 지역이름</th>
+    		<th>관광지점 지역이름</th>
+    		<th>강수확률(%)</th>
+    		<th>습도</th>
+    		<th>하늘상태</th>
+    		<th>3시간 기온</th>
+    		<th>동네예보 시각</th>
+    		<th>풍향</th>
+    	</tr>
+    	<tbody id='myTable'>
+    		
+    	</tbody>
+    </table>
+
+</div>
+	</div>
+  </div>
+
+</body>
+</html>
+
